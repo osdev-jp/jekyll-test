@@ -12,11 +12,10 @@ const height = width * 1.2;
 const fontSize = width / 5;
 var draw = SVG('logo').viewbox(0, 0, width, height)
 
-var f = (dx, dy) => {
+var f = (dx, dy, color) => {
   const cx = width / 2;
   const cy = width / 2;
   const unit = width / 13;
-  const color = "#4b29b1";
   const center_space_ratio = 0.7;
 
   var px = cx + center_space_ratio * unit * dx;
@@ -30,10 +29,10 @@ var line = draw.line(px, py, px, cy + 4.5 * unit * dy)
 line.stroke({ color: color, width: line_width, linecap: 'round' })
 }
 
-f(-1, -1);
-f(-1, 1);
-f(1, -1);
-f(1, 1);
+f(-1, -1, "red");
+f(-1, 1, "green");
+f(1, -1, "orange");
+f(1, 1, "blue");
 
 var text = draw.text('osdev-jp')
 text.font({
