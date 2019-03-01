@@ -1,7 +1,3 @@
-## osdev.jp
-
-osdev-jpでは、OS開発に有用な情報を収集し公開しています
-
 - [Wiki](https://github.com/osdev-jp/osdev-jp.github.io/wiki) OS開発に役立つ情報が集まっています．GitHubアカウントがあれば編集できます．
 - [GitHub](https://github.com/osdev-jp) サンプルコードなどが置いてあります．
 - [Slack](https://osdev-jp.slack.com/) OS開発に関する話をするosdev-jp公式チャットです．
